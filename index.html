@@ -1,51 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurant website</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="script.js">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:       ital,wght@0,300..800;1,300..800&family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
+  
   <!--custom header-->
   <header>
     <a href="#" class="logo"><img src="images/Manai Logo .png" alt=""></a>
-    <div class=" bi bi-list" id="menu-icon"></div>
-
     <ul class="navbar">
       <li><a href="#" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#menu"> Menu</a></li>
       <li><a href="#team">Team</a></li>
       <li><a href="#blog">Blog</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#" class="cart"><i class="bi bi-cart"></i></a></li>
     </ul>
-    <div" class="btnn">
-      <a href="#">Order Now</a>
-      </div>
+    <i class="bi bi-list" id="menu-icon"></i>
+    <div class="btnn">
+      <a href="#">Order Now</a> 
+    </div>
   </header>
+
+  <!-- Dashboard Section -->
+  <section class="dashboard" id="dashboard">
+    <div class="center-text">
+      <h2>Dashboard</h2>
+      <h3>Quick Stats</h3>
+    </div>
+    <div class="dashboard-content">
+      <div class="dashboard-card">
+        <i class="bi bi-people"></i>
+        <h4>Customers</h4>
+        <p>1,200</p>
+      </div>
+      <div class="dashboard-card">
+        <i class="bi bi-basket"></i>
+        <h4>Orders</h4>
+        <p>350</p>
+      </div>
+      <div class="dashboard-card">
+        <i class="bi bi-currency-dollar"></i>
+        <h4>Revenue</h4>
+        <p>₦500,000</p>
+      </div>
+      <div class="dashboard-card">
+        <i class="bi bi-star"></i>
+        <h4>Reviews</h4>
+        <p>4.8/5</p>
+      </div>
+    </div>
+  </section>
 
   <!--home-->
   <section class="home" id="home">
     <div class="home-text">
       <h3>Welcome</h3>
       <h1>Enjoy the best organic food</h1>
-      <p> we offer all kinds of local food for your consumption </p>
-      <a href="#" class="btn"> About Us</a>
+      <p>We offer all kinds of local food for your consumption</p>
+      <a href="#" class="btn">About Us</a>
     </div>
-
     <div class="home-img">
       <img src="images/pngwing.com (2).png" alt="">
     </div>
@@ -59,338 +81,123 @@
     <div class="about-text">
       <h3>About Us</h3>
       <h2>Manai Restaurant</h2>
-      <p>We cook all kinds of food both local and modern meal at affordable prices for your consumption and
-        people around you , you can be at home and other for your food</p>
+      <p>We cook all kinds of food both local and modern meal at affordable prices for your consumption and people around you. You can be at home and order for your food.</p>
       <a href="#" class="btn">About Us</a>
-    </div>
-  </section>
-
-  <!--Food Menu-->
-  <section class="menu" id="menu">
-    <div class="center-text">
-      <h2>Delicious food</h2>
-      <h3>Food Menu</h3>
-    </div>
-
-    <div class="menu-content">
-      <div class="box">
-        <div class="box-content">
-          <div box-img>
-            <img src="images/jellof and meat.png" alt="">
-
-            <div class="box-text">
-              <h4>Fried rice and chicken</h4>
-              <p>delicious local rice meal </p>
-              <h6>#1000</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="box-content">
-          <div box-img>
-            <img src="images/white rice and beans.jpg" alt="">
-
-            <div class="box-text">
-              <h4>Fried rice and chicken</h4>
-              <p>delicious local rice meal </p>
-              <h6>#1000</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="box-content">
-          <div box-img>
-            <img src="images/Yam and eguisi.png" alt="">
-
-            <div class="box-text">
-              <h4>Fried rice and chicken</h4>
-              <p>delicious local rice meal </p>
-              <h6>#1000</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="box-content">
-          <div box-img>
-            <img src="images/okro and meet .jpg" alt="">
-
-            <div class="box-text">
-              <h4>Fried rice and chicken</h4>
-              <p>delicious local rice meal </p>
-              <h6>#1000</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="box-content">
-          <div box-img>
-            <img src="images/Rice and fish .png" alt="">
-
-            <div class="box-text">
-              <h4>Fried rice and chicken</h4>
-              <p>delicious local rice meal </p>
-              <h6>#1000</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="box-content">
-          <div box-img>
-            <img src="images/pngwing.com (5).jpg" alt="">
-
-            <div class="box-text">
-              <h4>Fried rice and chicken</h4>
-              <p>delicious local rice meal </p>
-              <h6>#1000</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="box">
-        <div class="box-content">
-          <div box-img>
-            <img src="images/beans.png" alt="">
-
-            <div class="box-text">
-              <h4>Fried rice and chicken</h4>
-              <p>delicious local rice meal </p>
-              <h6>#1000</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="box-content">
-          <div box-img>
-            <img src="images/spa and sauce.png" alt="">
-
-            <div class="box-text">
-              <h4>Fried rice and chicken</h4>
-              <p>delicious local rice meal </p>
-              <h6>#1000</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="box-content">
-          <div box-img>
-            <img src="images/meat and fish.jpg" alt="">
-
-            <div class="box-text">
-              <h4>Fried rice and chicken</h4>
-              <p>delicious local rice meal </p>
-              <h6>#1000</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="box-btn">
-        <a href="#" class="btn"> Order Now</a>
-      </div>
     </div>
   </section>
 
   <!--Team-->
   <section class="team" id="team">
-    <div class=" center-text">
-      <h3> Team</h3>
+    <div class="center-text">
+      <h3>Team</h3>
       <h2>Our Experience Chefs</h2>
     </div>
-
     <div class="team-content">
       <div class="row">
         <div class="team-img">
           <img src="images/passport.JPG" alt="">
         </div>
         <h4>Samuel Yahaya</h4>
-        <p>executive chef</p>
+        <p>Executive Chef</p>
         <div class="team-icon">
           <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"> <i class="bi bi-instagram"></i></a>
-          <a href="#"> <i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
         </div>
       </div>
-
-      <div class="row">
-        <div class="team-img">
-          <img src="images/passport.JPG" alt="">
-        </div>
-        <h4>Samuel Yahaya</h4>
-        <p>executive chef</p>
-        <div class="team-icon">
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"> <i class="bi bi-instagram"></i></a>
-          <a href="#"> <i class="bi bi-twitter"></i></a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="team-img">
-          <img src="images/passport.JPG" alt="">
-        </div>
-        <h4>Samuel Yahaya</h4>
-        <p>executive chef</p>
-        <div class="team-icon">
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"> <i class="bi bi-instagram"></i></a>
-          <a href="#"> <i class="bi bi-twitter"></i></a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="team-img">
-          <img src="images/passport.JPG" alt="">
-        </div>
-        <h4>Samuel Yahaya</h4>
-        <p>executive chef</p>
-        <div class="team-icon">
-          <a href="#"><i class="bi bi-facebook"></i></a>
-          <a href="#"> <i class="bi bi-instagram"></i></a>
-          <a href="#"> <i class="bi bi-twitter"></i></a>
-        </div>
-      </div>
-
+      <!-- Repeat for other team members as needed -->
     </div>
   </section>
 
   <!--Newsletter-->
-
   <section>
     <div class="container">
       <div class="news-content">
         <div class="news-img">
           <img src="images/discount.jpg" alt="">
         </div>
-
         <div class="news-text">
-          <h3>Subsribe to our</h3>
+          <h3>Subscribe to our</h3>
           <h2>Newsletter</h2>
-          <p>Subscibe to our news later and receive 20% <br> discount from your order</p>
+          <p>Subscribe to our newsletter and receive 20% <br> discount from your order</p> 
         </div>
-
         <div class="letter">
           <form>
-            <input type="email" name="email" placeholder="your email" required>
-            <input type="submit" value="subscribe" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <input type="submit" value="Subscribe">
           </form>
         </div>
-
       </div>
     </div>
   </section>
 
   <!--Blog-->
   <section class="blog" id="blog">
-    <div class=" center-text">
+    <div class="center-text">
       <h3>Blog</h3>
       <h2>Our Food Update</h2>
     </div>
-
     <div class="blog-content">
       <div class="main">
         <img src="images/white rice and beans.jpg" alt="">
         <div class="blog-text">
-          <h6>july 2025</h6>
+          <h6>July 2025</h6>
           <h4>Available overtime</h4>
-          <p>many more Food will be available </p>
-
+          <p>Many more food will be available.</p>
           <div class="blog-btn">
-            <a href="#"> Learn more</a>
+            <a href="#">Learn more</a> 
             <span><i class="bi bi-arrow-right-short"></i></span>
           </div>
         </div>
       </div>
-
-      <div class="blog-content">
-        <div class="main">
-          <img src="images/white rice and beans.jpg" alt="">
-          <div class="blog-text">
-            <h6>july 2025</h6>
-            <h4>Available overtime</h4>
-            <p>many more Food will be available </p>
-
-            <div class="blog-btn">
-              <a href="#"> Learn more</a>
-              <span><i class="bi bi-arrow-right-short"></i></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="blog-content">
-          <div class="main">
-            <img src="images/white rice and beans.jpg" alt="">
-            <div class="blog-text">
-              <h6>july 2025</h6>
-              <h4>Available overtime</h4>
-              <p>many more Food will be available </p>
-
-              <div class="blog-btn">
-                <a href="#"> Learn more</a>
-                <span><i class="bi bi-arrow-right-short"></i></span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
+      <!-- Repeat .main for more blog posts -->
+    </div>
   </section>
 
-  <!---contact--->
+  <!--Contact-->
   <section class="contact" id="contact">
     <div class="contact-box">
       <h3>Manai Restaurant</h3>
-      <h5>Conect with us</h5>
-
+      <h5>Connect with us</h5>
       <div class="social">
         <a href="#"><i class="bi bi-facebook"></i></a>
-        <a href="#"> <i class="bi bi-instagram"></i></a>
-        <a href="#"> <i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
       </div>
     </div>
     <div class="contact-box">
       <h3>Menu Links</h3>
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#menu"> Menu</a></li>
-      <li><a href="#about">About us</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#contact">contact</a></li>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-
     <div class="contact-box">
       <h3>Our Food</h3>
-      <li><a href="#">Pizza</a></li>
-      <li><a href="#">Tuwo and okro soup</a></li>
-      <li><a href="#">Amala</a></li>
-      <li><a href="#">Bush meat</a></li>
-      <li><a href="#">Chicken</a></li>
-      <li><a href="#">Many more</a></li>
+      <ul>
+        <li><a href="#">Pizza</a></li>
+        <li><a href="#">Tuwo and okro soup</a></li>
+        <li><a href="#">Amala</a></li>
+        <li><a href="#">Bush meat</a></li>
+        <li><a href="#">Chicken</a></li>
+        <li><a href="#">Many more</a></li>
+      </ul>
     </div>
     <div class="contact-box address">
-      <h3>contact</h3>
+      <h3>Contact</h3>
       <i class="bi bi-geo-alt"><span>Damba kasaya</span></i>
       <i class="bi bi-envelope"><span>yahayasamuel@gmail.com</span></i>
-      <i class="bi bi-telephone"><span> +234 7047381505</span></i>
+      <i class="bi bi-telephone"><span>+234 7047381505</span></i>
     </div>
   </section>
   <div class="end-text">
-    <p>@ 2025 Samuel Yahaya. All Right Reserved</p>
+    <p>@ 2025 Samuel Yahaya. All Rights Reserved</p>
   </div>
   <!---custom js link--->
-  <script type="text/javascript" src="js/script.js"></script>
-
+  <script src="script.js"></script>
 </body>
-
 </html>

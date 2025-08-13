@@ -62,11 +62,10 @@ header {
   font-size: 30px;
 }
 #menu-icon {
-  color: var(--text-color);
-  font-size: 40px;
-  z-index: 1001;
-  cursor: pointer;
   display: none;
+}
+.btnn {
+  display: inline-block;
 }
 .btnn a {
   display: inline-block;
@@ -77,6 +76,7 @@ header {
   border: none;
   font-size: 17px;
   font-weight: 700;
+  text-decoration: none;
 }
 section {
   padding: 80px 18%;
@@ -133,7 +133,7 @@ section {
   background-size: cover;
   background-position: center;
   display: grid;
-  grid-template-columns: 2, 2fr;
+  grid-template-columns:1fr 2fr;
   align-items: center;
   grid-gap: 3rem;
 }
@@ -318,25 +318,26 @@ img {
   color: var(--second-color);
   font-size: 30px;
   font-weight: 600;
+}
 
-  .news-text p {
-    color: var(--other-color);
-    font-size: var(--p-font);
-    line-height: 30px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    font-family: sans-serif;
-  }
-  .letter form {
-    position: relative;
-    width: 350px;
-    max-width: 100%;
-  }
+.news-text p {
+  color: var(--other-color);
+  font-size: var(--p-font);
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+.letter form {
+  position: relative;
+  width: 350px;
+  max-width: 100%;
 }
 .letter form input:first-child {
   display: inline-block;
   width: 100%;
-  padding: 16px 130px 16px 15px;
+  padding: 17px 130px 17px 15px;
   border: 2px solid var(--main-color);
   outline: none;
   border-radius: 30px;
@@ -344,7 +345,6 @@ img {
 }
 
 .letter form input:last-child {
-  position: absolute;
   display: inline-block;
   outline: none;
   border: none;
@@ -352,7 +352,7 @@ img {
   border-radius: 30px;
   background: var(--main-color);
   color: #fff;
-  top: 1px;
+  top:20px;
   right: 1px;
   cursor: pointer;
 }
@@ -364,6 +364,7 @@ img {
   cursor: pointer;
   border: 20px;
   justify-items: center;
+  width: auto;
 }
 .main {
   padding: 0px 0px 10px 0px;
@@ -485,3 +486,184 @@ img {
   letter-spacing: 2px;
   padding: 20px;
 }
+.dashboard {
+  padding: 60px 18%;
+  background: #f8f8f8;
+}
+.dashboard-content {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.dashboard-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(19,8,73,0.08);
+  padding: 2rem 2.5rem;
+  text-align: center;
+  min-width: 180px;
+  flex: 1 1 180px;
+}
+.dashboard-card i {
+  font-size: 2.5rem;
+  color: var(--main-color);
+  margin-bottom: 0.5rem;
+}
+.dashboard-card h4 {
+  margin: 0.5rem 0 0.2rem 0;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+.dashboard-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--second-color);
+}
+
+/* Fixes for other issues */
+.btnn {
+  display: inline-block;
+}
+.btnn a {
+  text-decoration: none;
+}
+ul.navbar, .contact-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contact-box ul li {
+  margin-bottom: 10px;
+}
+
+/* Remove width and border from .blog-content */
+.blog-content {
+  width: auto;
+  border: none;
+}
+
+/* ...keep your existing code... */
+
+ @media (max-width: 1640px){
+  .home{
+    height: 80vh;
+    height: 100px;
+  }
+  header{
+    padding: 14px 3%;
+    transition: .3s;
+  }
+  header.sticky{
+    padding: 10px 3%;
+    transition: .3s;
+  }
+section{
+  padding: 70px 3%;
+  transition: .3s;
+}
+}
+
+ @media (max-width: 991px) {
+  #menu-icon {
+    display: block;
+    /* position: absolute; right: 30px; top: 30px; etc. */
+  }
+  .navbar {
+    display: none;
+  }
+}
+
+ @media (max-width: 1110px){
+  #menu-icon{
+   display: block; 
+  }
+  .top-btn{
+    display: none;
+  }
+  .navbar{
+    position: absolute;
+    top: -700px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: #fff;
+    align-items: flex-start;
+    box-shadow: 0px 0px 1px #13084982;
+    transition: all .40s ease;
+  }
+  .navbar a{
+    display: block;
+    padding: 0.8rem;
+   margin: 0.5rem;
+  }
+  .navbar .open{
+    top: 100%;
+  }
+ }
+
+ @media (max-width:1090px){
+  :root{
+  --big-font:3.7rem;
+  --h2-font: 2.6rem;
+  --p-font: 1rem;
+  transition: .3s;
+ }
+ }
+
+  @media (max-width:880px){
+    .home{
+      height: 75vh;
+      padding-top: 100px;
+    }
+ section{
+  padding: 80px 3%;
+ }
+ :root{
+  --big-font: 3.2rem;
+  --h2-font: 2.2rem;
+ }
+  }
+
+    @media (max-width:760px){
+      .home{
+        grid-template-columns: 1fr;
+        height: 100vh;
+        grid-gap:1rem;
+      }
+      .home-text{
+        text-align: center;
+      }
+      .home-img{
+        text-align: center;
+      }
+      .home-img img{
+        width:400px ;
+        max-width: 100%;
+        height: auto;
+      }
+      .about{
+         grid-template-columns: 1fr;
+        grid-gap:1rem;
+      }
+      .about-text{
+        align-items: center;
+
+      }
+      .about-img{
+        order: 2;
+        text-align: center;
+      }
+      .about-img img{
+        padding-top: 0px;
+      }
+      section{
+        padding: 65px 3px;
+        transition: .3s;
+      }
+       .letter form{
+        width: 250px;
+      }
+    }
+
